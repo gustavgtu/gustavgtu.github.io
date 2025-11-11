@@ -1,0 +1,297 @@
+/* 1. Pakeista visos svetainės šriftų šeima */
+body {
+    font-family: 'Poppins', 'Arial', sans-serif;
+    background-color: #f8f9fc;
+    color: #2b2d42;
+    line-height: 1.6;
+}
+
+/* 2. Antraščių stiliai (vizualiai skirtingi nuo default) */
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #0a369d;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4472ca;
+    letter-spacing: 1.5px;
+    line-height: 1.3;
+    border-left: 5px solid #4472ca;
+    padding-left: 12px;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #5e548e;
+    letter-spacing: 1.2px;
+    line-height: 1.4;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #9f86c0;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+h5 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #be95c4;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    text-decoration: underline;
+}
+
+h6 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #e0b1cb;
+    letter-spacing: 0.3px;
+    line-height: 1.7;
+    text-transform: uppercase;
+}
+
+/* 3. Pastraipų stilius (aiškiai kitoks nei antraštės) */
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #3d405b;
+    text-align: justify;
+    margin-bottom: 12px;
+    letter-spacing: 0.4px;
+}
+
+/* Papildomai – paryškintas tekstas */
+strong {
+    color: #0a369d;
+    font-weight: 700;
+}
+
+/* Nuorodų stilius */
+a {
+    color: #355070;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #d62828;
+    text-decoration: underline;
+}
+
+/* MYGTUKŲ STILIAI */
+button, .btn {
+    background: linear-gradient(90deg, #4b79a1, #283e51);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover efektas */
+button:hover, .btn:hover {
+    background: linear-gradient(90deg, #355070, #6d597a);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Paspaudus (active) */
+button:active, .btn:active {
+    background: #22223b;
+    transform: scale(0.97);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* NUORODŲ STILIAI */
+a {
+    color: #1d3557;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+/* Hover ant nuorodų */
+a:hover {
+    color: #e63946;
+    border-bottom: 2px solid #e63946;
+}
+
+/* Paspausta nuoroda (active) */
+a:active {
+    color: #6a040f;
+    border-bottom: 2px dashed #6a040f;
+}
+
+/* Bendras sekcijų konteinerių stilius */
+#about, #resume, #portfolio {
+    margin: 60px auto;
+    padding: 30px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* vienodi tarpai tarp vidinių elementų */
+}
+
+/* Turinio blokai kiekvienoje sekcijoje */
+#about .content-box,
+#resume .content-box,
+#portfolio .content-box {
+    background: #fff;
+    padding: 20px 25px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover efektas blokams, kad jaustųsi interaktyvumas */
+#about .content-box:hover,
+#resume .content-box:hover,
+#portfolio .content-box:hover {
+    border-color: #4472ca;
+    box-shadow: 0px 6px 16px rgba(68, 114, 202, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Jei sekcijos turi antraštes – suvienodinti tarpai */
+#about h2, #resume h2, #portfolio h2 {
+    margin-bottom: 25px;
+}
+
+/* Pataisomi vidiniai elementų tarpai */
+#about p, #resume p, #portfolio p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+/* Navigacijos juostos stiliaus pakeitimas */
+.navmenu {
+    background-color: #6a040f;
+    color: #ffffff;            /* tekstas baltas */
+    border-radius: 20px;       /* švelniai užapvalinti kampai */
+}
+
+.navmenu a {
+    color: #ffffff;            /* nuorodos baltos */
+    font-weight: bold;
+}
+
+.navmenu a:hover {
+    color: yellow;           /* pakeičiam nuorodų spalvą hover metu */
+}
+
+/* „Į viršų“ mygtuko stiliaus pakeitimas */
+#scroll-top {
+    background-color: #ff5722;  /* ryškiai oranžinis fonas */
+    color: white;               /* tekstas baltas */
+    border: none;
+    border-radius: 50%;         /* apvalus mygtukas */
+    padding: 15px 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#scroll-top:hover{
+    background-color: red;
+    transform: scale(2);
+
+}
+
+
+/* Numeruoto sąrašo stilius su skaitikliu */
+ol.custom-counter {
+    counter-reset: item; /* inicijuojame skaitiklį */
+    list-style: none;    /* paslepiame numatytąjį numeravimą */
+    padding-left: 0;
+}
+
+ol.custom-counter li {
+    counter-increment: item; /* didiname skaitiklį kiekvienam elementui */
+    margin: 10px 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+ol.custom-counter li::before {
+    content: counter(item) ". "; /* rodome skaitiklio reikšmę */
+    position: absolute;
+    left: 0;
+    color: #1a73e8; /* mėlynas numeris */
+    font-weight: bold;
+}
+
+
+
+/* Nenumeruoto sąrašo stilius su simboliais */
+ul.custom-bullets {
+    list-style: none; /* paslepiame numatytuosius bullets */
+    padding-left: 0;
+}
+
+ul.custom-bullets li {
+    position: relative;
+    margin: 8px 0;
+    padding-left: 25px;
+}
+
+ul.custom-bullets li::before {
+    content: "★";         /* pasirenkame simbolį bullet'ui */
+    position: absolute;
+    left: 0;
+    color: #ff5722;       /* oranžinė spalva */
+    font-size: 16px;
+}
+
+/* Bendras lentelės stilius */
+.services-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;       /* centre lygiuojame visą turinį */
+}
+
+/* Antraštinės eilutės stilius */
+.services-table thead tr {
+    background-color: #1a73e8; /* mėlynas fonas */
+    color: #ffffff;             /* baltas tekstas */
+    font-weight: bold;
+}
+
+/* Lentelės langelių stilius */
+.services-table th,
+.services-table td {
+    border: 1px solid #dddddd;
+    padding: 12px; /* vienodas užpildas */
+}
+
+/* Zebra efektas (eilutės su skirtingu fonu) */
+.services-table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Hover efektas */
+.services-table tbody tr:hover {
+    background-color: #d0e4ff; /* šviesiai mėlynas hover efektas */
+}
+
